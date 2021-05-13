@@ -15,6 +15,7 @@ html {
 
 body {
   font-family: sans-serif;
+  background-color: black;
 }
 /* start of hero section */
 .hero {
@@ -469,3 +470,65 @@ body {
 }
 
 /* End of Media Queries for hero-section*/
+
+/* start of ultrahumman section */
+.ultrahuman {
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.ultrahuman-link {
+  background-image: url(./ultrahuman-images/ultra.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  height: 0px;
+  padding-bottom: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ultrahuman-blog {
+  background-image: url(./ultrahuman-images/blog.png.webp);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  height: 0px;
+  padding-bottom: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* end of ultrahuman section */
+
+/* start of mobile ultrahuman css  */
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  .ultrahuman-link {
+    background-image: -webkit-image-set(
+      url("./ultrahuman-images/ultra.png") 1x
+    );
+  }
+
+  .ultrahuman-blog {
+    background-image: -webkit-image-set(
+      url("./ultrahuman-images/blog.png.webp") 1x
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .ultrahuman {
+    padding: 48px 0px;
+    grid-template-columns: 1fr;
+  }
+  .ultrahuman-link,
+  .ultrahuman-blog {
+    padding-bottom: 100%;
+  }
+}
+
+/* end of mobile ultrahuman css */
