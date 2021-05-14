@@ -473,6 +473,138 @@ html {
   
   /* End of Media Queries for hero-section*/
   
+  /* start of growthschool section */
+
+  .growth{
+    background-color: #131314;
+    margin-top: -100px;
+    padding: 50px 0 30px 0;
+  }
+
+  .growth .growth-title{
+    text-align: center;
+    margin: 100px 0 8px 0;
+    padding: 16px;
+  }
+
+  .growth-title h1{
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .growth .dn, .dnb{
+    display: none;
+  }
+
+  .growth-content{
+    text-align: center;
+    margin-bottom: 130px;
+    padding: 16px;
+  }
+
+  .growth-content p{
+    font-size: 24px;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .growth-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+  }
+
+  .growth-boxes h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #8E8E93;
+    letter-spacing: 1px;
+  }
+
+  .growth-sm-box{
+    background-color: #19191a;
+    padding: 16px;
+    margin: 0 8px;
+    border-radius: 10px;
+  }
+
+  .growth-invisible{
+    display: none;
+    padding: 16px;
+  }
+ 
+
+  @media screen and (max-width:480px) {
+    .growth-content p{
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: 100;
+    }
+
+    .growth-content{
+      margin-bottom: 60px;
+    }
+
+    .growth-invisible{
+      display: block;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .gr-invi{
+      display: inline-block;
+      background-color: #19191a;
+      color: #8e8e93;
+      font-weight: 600;
+      margin: 0 8px;
+      margin-bottom: 16px;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 15px
+    }
+
+    .growth .dnb{
+      display: block;
+    }
+
+    .growth-view-btn button{
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid white;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    .growth-view-btn button img{
+      margin-left: 8px;
+      margin-bottom: -2px;
+    }
+
+    .growth-view-btn{
+      text-align: center;
+      margin: 20px 0;
+      justify-content: center;
+    }
+
+    .growth-invisible h4{
+      display: inline-block;
+    }
+
+    .growth-boxes{
+      display: none;
+    }
+  }
+
+  /* end of growthschool section */
+
+  
   /* start of ultrahumman section */
   .ultrahuman {
     padding: 48px;
@@ -536,6 +668,10 @@ html {
   /* end of mobile ultrahuman css */
   
   /* Start of the footer css*/
+
+  .footer{
+    justify-content: center;
+  }
   
   .footer a{
       text-decoration: none;
@@ -560,7 +696,7 @@ html {
   
   .footer-content li{
       margin-bottom: 25px;
-      font-size: 15px;
+      font-size: 14px;
   }
   
   .footer-content a:hover{
@@ -568,19 +704,27 @@ html {
   }
   
   .footer .container{
-      margin: 60px 0 20px 50px;
+      max-width: 100%;
+      margin-top: 60px;
+      justify-content: center;
+      margin: 60px 120px;
+      margin-bottom: 30px;
   }
   
   .footer .col{
       flex-basis: 0;
       flex-grow: 1;
       max-width: 100%;
+      position: relative;
+      padding-left: 32px;
   }
   
   .footer .row{
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 100px;
+      justify-content: center;
+      
   }
   
   .footer .display-none{
@@ -593,7 +737,7 @@ html {
   
   .footer .aicons{
       opacity: 0.5;
-      font-size: 19px;
+      font-size: 17px;
   }
   
   .footer .dn{
@@ -617,8 +761,28 @@ html {
       opacity: 0.6;
       font-size: 14px;
   }
+
+  @media only screen and (max-width:  1024px){
+  .footer .container {
+      margin: 60px 32px;
+      margin-bottom: 20px;
+  }
+  }
+
+@media only screen and (max-width: 768px){
+.footer .container{
+    margin: 60px 10px;
+}
+}
+
+
+@media (max-width: 960px){
+.footer .container {
+    max-width: 100%;
+}
+}
   
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
       .footer .display-none{
           display: none;
       }
@@ -631,8 +795,10 @@ html {
       }
   
       .footer .footer-icons{
+          display: flex;
+          flex-wrap: wrap;
           justify-content: space-evenly;
-          margin: 60px 0 20px -60px;
+          margin: 60px 0 20px 0px;
       }
   
       .footer .footer-icons a{
