@@ -534,6 +534,136 @@ html {
   }
   
   /* end of mobile ultrahuman css */
+
+  @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+/* html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+#FAQ {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  /* background: #111; */
+  /* color: grey; */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 4px;
+}
+.FAQ-container {
+  color: grey;
+  margin: 0 auto;
+  padding: 3rem;
+  width: 48rem;
+}
+.FAQ-heading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1.3rem;
+  margin: 0;
+}
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #fff;
+}
+.accordion a:hover::after {
+  border: 1px solid #fff;
+}
+.accordion a.active {
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: white;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #fff
+  border: 1px solid #fff;
+}
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+  color: grey;
+}
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: grey;
+}
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}
+
+@media  (max-width: 500px) {
+
+  .FAQ-container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+  }
+  .FAQ-heading {
+    text-align: center;
+    align-self: flex-end;
+  }
+}
+/* END OF FAQ SECTION CSS */
   
   /* Start of the footer css*/
   
