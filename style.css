@@ -1297,7 +1297,6 @@ margin-top: 5px;
 }
 
 .slides a button{
-  cursor: pointer;
   border: none;
   font-size: 2vw;
   padding: 12px 22px;
@@ -1307,6 +1306,7 @@ margin-top: 5px;
   position: relative;
     top: -10vw;
     left: 80%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
@@ -1319,7 +1319,7 @@ margin-top: 5px;
     color: #fff;
     position: relative;
     top: -12vw;
-    left: 72%
+    left: 72%;
   }
 }
 
