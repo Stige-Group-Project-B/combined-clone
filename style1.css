@@ -381,9 +381,10 @@ body{
     }
 
 
-    .unlu-btn-1 :button{
+   .unlu-btn-1{
         position: fixed;
-        bottom: -10px;        
+        bottom: 10px;     
+        padding: 0 0;
     }
 }
 
