@@ -1212,6 +1212,7 @@ margin-top: 5px;
 
 .marquee-content li img {
   border-radius: 8px;
+  margin-left: 10px;
 }
 
 .marquee li a{
@@ -1225,8 +1226,8 @@ margin-top: 5px;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   min-width: 28px;
   position: absolute;
-  margin-top: 65px;
-  margin-left: -140px;
+  margin-top: 105px;
+  margin-left: -200px;
   padding: 10px 16px;
   text-decoration: none;
   border-radius: 18px;
@@ -1245,15 +1246,13 @@ margin-top: 5px;
     transition: all 0.5s ease-in-out;
   }
 
-  
-
   .marquee li a:hover{
     opacity: 1;
     transition: all 0.5s ease-in-out;
   }
   
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   html { font-size: 12px; }
   :root {
     --marquee-height: 100%;
@@ -1268,8 +1267,9 @@ margin-top: 5px;
 
   .marquee li a{
     margin-top: 40px;
-  margin-left: -90px;
+  margin-left: -89px;
   font-size: 14px;
+
   }
 }
 
@@ -1362,7 +1362,7 @@ margin-top: 5px;
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .prev-slick-img img{
     width: 50px;
   }
@@ -1398,7 +1398,7 @@ margin-top: 5px;
 
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:340px) {
   .slides a button{
     border: none;
     font-size: 3vw;
@@ -1407,8 +1407,8 @@ margin-top: 5px;
     background-color: #1d1d1f;
     color: #fff;
     position: relative;
-    top: -30vw;
-    left: 22%
+    top: -25vw;
+    left: 26%
   }
 }
 
