@@ -1297,6 +1297,7 @@ margin-top: 5px;
 }
 
 .slides a button{
+  cursor: pointer;
   border: none;
   font-size: 2vw;
   padding: 12px 22px;
@@ -1398,6 +1399,7 @@ margin-top: 5px;
     position: relative;
     top: -20vw;
     left: 32%
+    
   }
 
 }
