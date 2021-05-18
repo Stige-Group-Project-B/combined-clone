@@ -235,6 +235,10 @@ body {
     display: block;
   }
 
+  .unlu-main {
+    margin-top: 32px !important;
+  }
+
   .dn {
     display: none;
   }
@@ -294,6 +298,7 @@ body {
   .unlu-rating p {
     font-size: 3.5vw;
     margin-bottom: 3px;
+    margin-top: 10px;
   }
 
   .unlu-rating span {
@@ -309,7 +314,7 @@ body {
     align-self: center;
     padding: 0px 0 0 15px;
     font-size: 4vw;
-    margin: 10px 20px 0 20px;
+    margin: 10px 20px 0 30px;
   }
 
   .unlu-url span {
@@ -394,7 +399,7 @@ body {
 
 /* style addded by dma */
 .unlu-main {
-  height: 100vh;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
