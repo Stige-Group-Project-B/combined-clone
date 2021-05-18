@@ -314,7 +314,7 @@ body {
     align-self: center;
     padding: 0px 0 0 15px;
     font-size: 4vw;
-    margin: 10px 20px 0 30px;
+    margin: 10px 20px 0 25px;
   }
 
   .unlu-url span {
@@ -400,9 +400,6 @@ body {
 /* style addded by dma */
 .unlu-main {
   margin-top: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 .unlu-container {
   padding: 10px;
