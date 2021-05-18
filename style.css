@@ -1154,7 +1154,7 @@ body {
     var(--marquee-width) / var(--marquee-elements-displayed)
   );
   --marquee-animation-duration: calc(var(--marquee-elements) * 6.5s);
-  --marquee-animation-duration1: calc(var(--marquee-elements) * 5.5s);
+  --marquee-animation-duration1: calc(var(--marquee-elements) * 5s);
 }
 
 .marquee {
@@ -1469,17 +1469,24 @@ body {
     width: 20px;
     height: 20px;
   }
+
+  .growth-title h1 {
+    font-size: 28px;
+  }
 }
 
 .marquee-content li img:hover {
   filter: brightness(80%);
 }
-
-.slick-slide a img {
+.marco li img:hover {
   filter: brightness(80%);
 }
 
-.slick-slide a img:hover {
+.slick-slide a img {
+  filter: brightness(60%);
+}
+
+.slick-slide.slick-active a img {
   filter: brightness(100%);
   transition: 0.5s;
 }
@@ -1529,6 +1536,11 @@ body {
   color: #fff;
   margin-top: 18px;
   text-decoration: none;
+}
+
+.apple-cta-wrapper a:hover {
+  background-color: #111;
+  color: #f3f3f3;
 }
 
 /* end of added styles by DMA */ ;
